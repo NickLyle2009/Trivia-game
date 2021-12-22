@@ -12,10 +12,34 @@ var questionTitleEl = document.querySelector(".questionTitle")
 var multipleChoiceEl = document.querySelector(".multipleChoice")
 var highscoreEl = document.querySelector(".highscore")
 var sumbitEl = document.querySelector("submit")
+var multiplechoice = [
+  {
+    question: "whats the answer?",
+  choices: ["a", "b"],
+ answer: "a"
+ },
+ {
+ question: "how old are you?",
+ choices: [28, 29, 15, 5, 7],
+ answer: 28
+ },
+ {
+ question: "how old are you?",
+ choices: [28, 29, 15, 5, 7],
+ answer: 28
+ },
+ {
+ question: "how old are you?",
+ choices: [28, 29, 15, 5, 7],
+ answer: 28
+ },]
 var secondsLeft = 60
 
 var index = 0
-button.start.addEventListener("click", function());
+button.start.addEventListener("click", function(){
+  setTime();
+appe
+}
 // 1. How do I store my questions and answers?
 
 // => Let's put my questions and answers in an Array!
@@ -25,28 +49,8 @@ button.start.addEventListener("click", function());
 // (multiple choice)
 // (answer)
 
-//var multiplechoice = [
-// {
-// question: "whats the answer?",
-// choices: ["a", "b"],
-// answer: "a"
-// },
-// {
-// question: "how old are you?",
-// choices: [28, 29, 15, 5, 7],
-// answer: 28
-// },
-// {
-// question: "how old are you?",
-// choices: [28, 29, 15, 5, 7],
-// answer: 28
-// },
-// {
-// question: "how old are you?",
-// choices: [28, 29, 15, 5, 7],
-// answer: 28
-// },
-// ]
+
+]
 
 
 
@@ -164,9 +168,11 @@ decrementEl.addEventListener("click", function() {
   }, 1000);
 }
 
-// Function to create and append colorsplosion image
+
 function endquiz() {
-  timeEl.textContent = " ";
+  timeEl
+  timeEl.textContent = ("");
   document.querySelector(".question").innerhtml("");
   document.querySelector(".highscore").appendChild(submit);
-  document.querySelector(".highscore").appendChild(inputBar)
+  document.querySelector(".highscore").appendChild(inputBar);
+}
